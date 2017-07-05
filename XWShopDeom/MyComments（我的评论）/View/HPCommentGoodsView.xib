@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HPCommentGoodsView">
+            <rect key="frame" x="0.0" y="0.0" width="373" height="132"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VpK-FA-Zov">
+                    <rect key="frame" x="9" y="12" width="355" height="77"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ua9-H8-xKq">
+                            <rect key="frame" x="0.0" y="0.0" width="77" height="77"/>
+                            <color key="backgroundColor" red="1" green="0.55061004719999995" blue="0.18225692030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="77" id="svg-EI-kmb"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="高（130）韩国芝士年糕部队火锅套餐新年该哦与都睡不好" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2bR-VQ-fQW">
+                            <rect key="frame" x="89" y="15" width="254" height="16"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¥ 2290" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OP0-In-rwE">
+                            <rect key="frame" x="89" y="45" width="52" height="20"/>
+                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
+                            <color key="textColor" red="0.76470588235294112" green="0.1803921568627451" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="Ua9-H8-xKq" firstAttribute="leading" secondItem="VpK-FA-Zov" secondAttribute="leading" id="9Pq-iv-g4J"/>
+                        <constraint firstItem="Ua9-H8-xKq" firstAttribute="top" secondItem="VpK-FA-Zov" secondAttribute="top" id="Hxf-NQ-Wxs"/>
+                        <constraint firstAttribute="bottom" secondItem="OP0-In-rwE" secondAttribute="bottom" constant="12" id="MwW-ph-WJ9"/>
+                        <constraint firstAttribute="trailing" secondItem="2bR-VQ-fQW" secondAttribute="trailing" constant="12" id="P38-F2-RbD"/>
+                        <constraint firstItem="2bR-VQ-fQW" firstAttribute="top" secondItem="VpK-FA-Zov" secondAttribute="top" constant="15" id="Zfb-Yv-ntm"/>
+                        <constraint firstItem="2bR-VQ-fQW" firstAttribute="leading" secondItem="Ua9-H8-xKq" secondAttribute="trailing" constant="12" id="aPH-TL-QOc"/>
+                        <constraint firstItem="OP0-In-rwE" firstAttribute="leading" secondItem="Ua9-H8-xKq" secondAttribute="trailing" constant="12" id="bEE-e5-caw"/>
+                        <constraint firstAttribute="bottom" secondItem="Ua9-H8-xKq" secondAttribute="bottom" id="gh9-er-Lbe"/>
+                        <constraint firstAttribute="height" constant="77" id="krZ-IL-cFL"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vg6-33-erh">
+                    <rect key="frame" x="296" y="99" width="68" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="68" id="TvZ-8r-Erh"/>
+                        <constraint firstAttribute="height" constant="21" id="xn3-vy-i16"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <state key="normal" title="已好评">
+                        <color key="titleColor" red="0.76470588240000004" green="0.18039215689999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sS9-8O-1BH">
+                    <rect key="frame" x="0.0" y="131.5" width="373" height="0.5"/>
+                    <color key="backgroundColor" red="0.92156862745098034" green="0.92156862745098034" blue="0.92156862745098034" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="Dwn-Oi-Zff"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Vg6-33-erh" firstAttribute="top" secondItem="VpK-FA-Zov" secondAttribute="bottom" constant="10" id="5eU-Og-Acf"/>
+                <constraint firstAttribute="trailing" secondItem="sS9-8O-1BH" secondAttribute="trailing" id="AbH-KS-l8E"/>
+                <constraint firstItem="sS9-8O-1BH" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="HJw-Hh-ggY"/>
+                <constraint firstAttribute="bottom" secondItem="sS9-8O-1BH" secondAttribute="bottom" id="HLN-Li-Fpq"/>
+                <constraint firstItem="VpK-FA-Zov" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="12" id="HPF-rX-zoC"/>
+                <constraint firstAttribute="trailing" secondItem="Vg6-33-erh" secondAttribute="trailing" constant="9" id="eRQ-AZ-F9g"/>
+                <constraint firstAttribute="trailing" secondItem="VpK-FA-Zov" secondAttribute="trailing" constant="9" id="nVV-zT-IIM"/>
+                <constraint firstItem="VpK-FA-Zov" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="9" id="pzT-ho-i7B"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="commentlevelbl" destination="Vg6-33-erh" id="Syc-Jw-Rd5"/>
+                <outlet property="goodsname_bl" destination="2bR-VQ-fQW" id="HbE-lv-kgp"/>
+                <outlet property="goodsphoto" destination="Ua9-H8-xKq" id="9kK-nJ-Jfv"/>
+                <outlet property="price_bl" destination="OP0-In-rwE" id="z1d-dt-Cud"/>
+            </connections>
+            <point key="canvasLocation" x="-10.5" y="-1292"/>
+        </view>
+    </objects>
+</document>

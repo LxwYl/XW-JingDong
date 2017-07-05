@@ -1,0 +1,150 @@
+//
+//  PrefixHeader.pch
+//  电商APP
+//
+//  Created by 韩军强 on 2017/1/19.
+//  Copyright © 2017年 ios. All rights reserved.
+//
+
+//并在 pch第一行加
+#ifdef __OBJC__
+
+//在自己工程的pch开头引用
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+//#import <HyphenateLite/HyphenateLite.h>
+//#import "EaseUI.h"
+#pragma mark - ---------- Framework (框架) ----------
+
+
+
+#pragma mark - ---------- Project (项目) ----------
+
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+
+#ifdef DEBUG
+
+#define KDLOG(format, ...) printf("%s [第%d行] %s\n", __FUNCTION__, __LINE__, [[NSString stringWithFormat:format, ## __VA_ARGS__] UTF8String]);
+
+#define NSLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
+
+#else
+
+#define KDLOG(...);
+#define NSLog(...);
+
+#endif
+// 商品订单过期时间
+#define OrderOverdueTime 60*60*24
+#define LoginKey @"loginKey"
+#define UserAccount @"UserAccount"
+#define UserPassword @"UserPassword"
+#define SearHotContent @"SearHotContent"
+#define APP_Fisrt @"APP_Fisrt"
+
+
+#define BASEURL @""
+//#define BASEURL @"http://192.168.1.41:8084/koudaiyun/"
+
+
+
+
+#define LoginKey @"loginKey"
+#define UserRole @"userRole"
+
+#define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
+#define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
+#define RGBCOLOR(r,g,b) [UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:1]
+#define RGBCOLORALPHA(r,g,b,a) [UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:a]
+#define TEXTFIELDCOLOR RGBCOLOR(51, 51, 51)
+//代码适配等比例拉伸（纯代码适配也可以用masonry）
+#define kSCREEN_WIDTH_RATIO (SCREEN_WIDTH/375.0)
+#define kSCREEN_HEIGHT_RATIO (SCREEN_HEIGHT<567?1:SCREEN_HEIGHT/567.0)
+#define kAutoWEX(w) (w*kSCREEN_WIDTH_RATIO)
+#define kAutoHEX(h) (h*kSCREEN_HEIGHT_RATIO)
+#import "UIView+Extension.h"
+//#import <MJExtension/MJExtension.h>
+#import "XWNetWorkManager.h"
+#import "DJTUtility.h"
+#import "UIColor+CRBoost.h"
+#import "MJRefresh.h"
+#import "AFNetworking.h"
+#import "MJExtension.h"
+#import "Masonry.h"
+#import "SDWebImageManager.h"
+#import "UIImageView+WebCache.h"
+#import "FL_Button.h"
+/*
+#import "NSObject+XWRegularExpression.h"
+#import "XWNetWorkManager.h"
+#import "DJTUtility.h"
+#import "UIColor+CRBoost.h"
+#import <MJExtension/MJExtension.h>
+#import "UIView+Extension.h"
+#import "UIBarButtonItem+Extension.h"
+#import "UINavigationController+FDFullscreenPopGesture.h"  //全屏手势返回
+#import <Masonry.h>
+#import "AFNetworking.h"
+#import "HPPersonModel.h"
+#import "AppDelegate.h"
+#import "PYSearchViewController+request.h"
+#import "MJRefresh.h"
+
+#import "MBProgressHUD+MJ.h"
+#import "UIImage+Extension.h"
+#import "CYPasswordView.h"
+
+
+#import "UIButton+Action.h"
+#import "UIView+views.h"
+#import "UIView+CurrentVc.h"
+#import "UIImageView+XXBezierTransform.h"
+#import "UIViewController+XX3DFallAndRise.h"
+
+#import "NSObject+Extension.h"
+#import <DZNEmptyDataSet/UIScrollView+EmptyDataSet.h> //空白页
+#import "NSObject+XWRegularExpression.h"
+//环信缓存
+#import "UserCacheManager.h"
+
+//弱指针
+#define HJQWeakSelf(type)  __weak typeof(type) weak##type = type;
+#define HJQStrongSelf(type)  __strong typeof(type) type = weak##type;
+
+ */
+//判断横竖屏
+#define UI_IS_LANDSCAPE         ([UIDevice currentDevice].orientation == UIDeviceOrientationLandscapeLeft || [UIDevice currentDevice].orientation == UIDeviceOrientationLandscapeRight)
+//判断设备型号
+#define UI_IS_IPAD              ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad)
+#define UI_IS_IPHONE            ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone)
+#define UI_IS_IPHONE4           (UI_IS_IPHONE && [[UIScreen mainScreen] bounds].size.height < 568.0)
+#define UI_IS_IPHONE5           (UI_IS_IPHONE && [[UIScreen mainScreen] bounds].size.height == 568.0)
+#define UI_IS_IPHONE6           (UI_IS_IPHONE && [[UIScreen mainScreen] bounds].size.height == 667.0)
+#define UI_IS_IPHONE6PLUS       (UI_IS_IPHONE && [[UIScreen mainScreen] bounds].size.height == 736.0 || [[UIScreen mainScreen] bounds].size.width == 736.0) // Both orientations
+//判断设备系统版本
+#define UI_IS_IOS8_AND_HIGHER   ([[UIDevice currentDevice].systemVersion floatValue] >= 8.0)
+
+//#define ENABLE_LITE 1
+
+
+#define autoSize_w(a) (a/375.0)*[UIScreen mainScreen].bounds.size.width
+#define autoSize_h(a) (a/667.0)*[UIScreen mainScreen].bounds.size.height
+
+#define autoFont(a) (a/667.0)*[UIScreen mainScreen].bounds.size.height
+
+#define KDKeyWindow [UIApplication sharedApplication].keyWindow
+
+
+
+
+
+
+#endif /* PrefixHeader_pch */
+
+
+
+//最后一行加
+#endif
