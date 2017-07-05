@@ -797,7 +797,7 @@
 -(void)gotoBuy
 {
     // 值为-1 且 self.model.commodityPropertyList.count存在型号时必须选择商品型号 （）
-     if ([_spec_info isEqualToString:@"-1"]&&self.model.commodityPropertyList.count>0) {
+    // if ([_spec_info isEqualToString:@"-1"]&&self.model.commodityPropertyList.count>0) {
     
          
          // 如果客户一次也未查看过商品尺码的情况下 上弹规格尺码
@@ -824,8 +824,8 @@
         
         
     };
-    //    return;
-}
+
+//}
     /*
      *  在这里跳转订单详情
      */
